@@ -24,9 +24,12 @@ scalacOptions ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.scalatest"   %% "scalatest" % "3.0.1" % Test,
-  "org.scalikejdbc" %% "scalikejdbc"         % "2.5.2",
-  "com.h2database"  %  "h2"                  % "1.4.195",
-  "ch.qos.logback"  %  "logback-classic"     % "1.2.3"
+  "org.scalatest"          %% "scalatest"                    % "3.0.5" % Test,
+  "org.scalikejdbc"        %% "scalikejdbc"                  % "3.2.3",
+  "org.scalikejdbc"        %% "scalikejdbc-config"           % "3.2.3",
+  "org.scalikejdbc"        %% "scalikejdbc-test"             % "3.2.3" % Test,
+  "org.scalikejdbc"        %% "scalikejdbc-syntax-support-macro" % "3.2.+",
+  "ch.qos.logback"         % "logback-classic"               % "1.2.3",
+  "mysql"                  % "mysql-connector-java"          % "6.0.6"
 )
 
